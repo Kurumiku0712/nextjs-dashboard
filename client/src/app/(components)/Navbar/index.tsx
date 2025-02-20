@@ -1,15 +1,36 @@
 "use client";
+import { useAppDispatch, useAppSelector } from "@/app/redux";
+import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
-  const isDarkMode = false;
+  const dispatch = useAppDispatch();
+  // Get the global state variables defined in the redux store (@/state/index.ts)
+  const isSidebarCollapsed = useAppSelector(
+    (state) => state.global.isSidebarCollapsed
+  );
+  const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
 
-  const toggleSidebar = () => {};
+  /**
+   * Toggles the sidebar collapse state.
+   * This function is a shortcut to modify the global redux state variable isSidebarCollapsed.
+   * @function
+   */
+  const toggleSidebar = () => {
+    dispatch(setIsSidebarCollapsed(!isSidebarCollapsed));
+  };
 
-  const toggleDarkMode = () => {};
+  /**
+   * Toggles the dark mode state.
+   * This function is a shortcut to modify the global redux state variable isDarkMode.
+   * @function
+   */
+  const toggleDarkMode = () => {
+    dispatch(setIsDarkMode(!isDarkMode));
+  };
 
   return (
     <div className="flex justify-between items-center w-full mb-7">
