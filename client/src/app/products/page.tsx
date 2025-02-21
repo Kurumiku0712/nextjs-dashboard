@@ -81,8 +81,8 @@ const Products = () => {
             >
               <div className="flex flex-col items-center">
                 <Image
-                  src={`https://s3-nextjs-dashboard.s3.ap-southeast-2.amazonaws.com/dish-${
-                    Math.floor(Math.random() * 10) + 1
+                  src={`https://s3-nextjs-dashboard.s3.ap-southeast-2.amazonaws.com/product-${
+                    Math.floor(Math.random() * 5) + 1
                   }.jpg`}
                   alt={product.name}
                   width={150}
