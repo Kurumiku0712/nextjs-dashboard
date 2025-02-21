@@ -1,16 +1,16 @@
 # Inventory Management Dashboard
 
-## Tech Stack
+Website here: https://main.d1zvv01v2vt4p6.amplifyapp.com/
 
-Next JS
+## Technologies Used
 
-Tailwind
+NextJS
+
+Tailwind CSS
 
 Redux Toolkit
 
-Redux Toolkit Query
-
-Material UI Data Grid
+Material UI 
 
 Node.js
 
@@ -25,3 +25,24 @@ AWS API Gateway
 AWS Amplify
 
 AWS S3
+
+
+## SetUp
+
+```
+git clone https://github.com/Kurumiku0712/nextjs-dashboard.git
+
+cd nextjs-dashboard
+
+cd client  
+
+nvm use 20
+
+npm install
+
+npm run dev
+
+```
+
+
+
