@@ -82,7 +82,7 @@ const Sidebar = () => {
         }`}
       >
         <Image
-          src="vercel.svg"
+          src="next.svg"
           alt="py-logo"
           width={27}
           height={27}
