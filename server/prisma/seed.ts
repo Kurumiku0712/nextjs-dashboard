@@ -22,6 +22,15 @@ async function deleteAllData(orderedFileNames: string[]) {
   }
 }
 
+/**
+ * Main function to seed the database with data from JSON files.
+ *
+ * The main function is responsible for seeding the database with data from JSON files.
+ * It first clears all data from the database and then reads the data from the JSON files.
+ * It then creates new records in the database with the data from the JSON files.
+ *
+ * The function takes no arguments and returns nothing.
+ */
 async function main() {
   const dataDirectory = path.join(__dirname, "seedData");
 
